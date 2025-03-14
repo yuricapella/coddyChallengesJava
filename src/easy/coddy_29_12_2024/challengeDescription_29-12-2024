@@ -1,12 +1,38 @@
-Picnic Item Sorter
+Circular Object Count Manager
 
-Create a function named sortPicnicItems that receives items as its parameter.
 
-This function aims to organize the items you are bringing to a picnic in a park near a boulder. To ensure everything fits nicely in your picnic basket, you want to sort the items alphabetically.
+Challenge
 
-The function should take the unsorted array of picnic items, sort them in alphabetical order, and return the sorted array.
+Easy
+Create a function named countCircularObjects that receives action, objectType, and count as parameters.
 
-Parameter:
+This function manages counts of circular objects (balls, coins, lenses) in a photography exhibit. It starts with zero counts for all objects. Based on the action ('add' or 'remove') and objectType, it updates the count. If 'remove' is requested and there are not enough objects, it returns an error message. The function returns a message indicating the current counts of all objects after the operation.
 
-items (String[]): An unsorted array of strings, where each string represents an item you are planning to bring to the picnic.
-The function returns a String[] which is the alphabetically sorted version of the input array.
+Parameters:
+
+action (String): 'add' or 'remove'.
+objectType (String): 'ball', 'coin', or 'lens'.
+count (int): Number of items to add or remove.
+The function returns a String message indicating the current counts of all objects after each operation.
+
+Constraints:
+
+action will be 'add' or 'remove'.
+objectType will be 'ball', 'coin', or 'lens'.
+count will be a positive integer.
+
+Arguments to add
+add
+ball
+5
+
+Expected Output
+Current counts: balls = 5, coins = 0, lenses = 0
+
+Arguments to remove
+remove
+ball
+3
+
+Expected Output
+Error: Not enough balls to remove.
