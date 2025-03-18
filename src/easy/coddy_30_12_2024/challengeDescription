@@ -1,0 +1,35 @@
+The Lost Child
+
+Create a function named findLostChild that receives
+familyLocations and timmyLocation as parameters.
+
+This function finds the family member closest to Timmy's location
+in the backyard during a family gathering.
+
+Given an array of integers representing family members' locations
+and an integer for Timmy's location,
+calculate the absolute difference between Timmy's location and
+each family member's location.
+Return the index of the family member with the smallest difference.
+If there is a tie, return the index of the first family member found.
+
+Parameters:
+
+familyLocations (int[]): An array of integers representing family members' location
+in the backyard.
+timmyLocation (int): An integer representing Timmy's current location in the backyard.
+The function returns an integer,
+which is the index of the family member closest to Timmy's location
+in the familyLocations array.
+
+Arguments
+[1, 2, 3, 4, 5]
+3
+Expected Output
+2
+
+Arguments 2
+[10, 20, 30, 40, 50]
+25
+Expected Output
+1
