@@ -1,3 +1,5 @@
+package easy.coddy_11_12_2024;
+
 import java.util.Scanner;
 
 class DetermineWaterBottleType {
