@@ -1,0 +1,26 @@
+Botanical Garden Messages
+
+Create a function named botanicalMessage that receives plantName and index as its parameters.
+
+This function aims to generate a unique message for an informational sign in a botanical garden
+by combining the plant name with a corresponding Fibonacci number.
+
+The Fibonacci sequence is a series of numbers where each number is the sum of the two preceding ones,
+usually starting with 0 and 1. The sequence goes: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, and so on.
+
+Your task is to find the Fibonacci number at the specified index
+(considering 0-based indexing) and concatenate it with the plantName to create the botanical message.
+
+For example:
+
+If plantName is "Rose" and index is 3,
+the corresponding Fibonacci number would be 2 (considering 0-based indexing), so the function should return "Rose2".
+If plantName is "Tulip" and index is 6, the corresponding Fibonacci number would be 8,
+so the function should return "Tulip8".
+Implement the logic to calculate the Fibonacci number at the given index
+and concatenate it with the plant name to form the final message.
+
+Parameters:
+plantName (String): The name of the plant.
+index (int): The index of the desired Fibonacci number (0-based).
+The function returns a String representing the generated botanical message.
