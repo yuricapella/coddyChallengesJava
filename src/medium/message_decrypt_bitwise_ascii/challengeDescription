@@ -1,0 +1,19 @@
+Jungle Mystery Decoder
+
+Create a function named decodeJungleMessage that receives message and key as its parameters.
+
+This function decodes cryptic messages found in ancient ruins. Each message is an array of integers. Follow these steps to decode:
+
+Select elements at indices that are multiples of the key.
+Apply these operations to each selected element:
+If even, perform a bitwise AND with the key.
+If odd, perform a bitwise OR with the key.
+If a multiple of 3, decrement by 1.
+If a multiple of 5, increment by 1.
+Convert each resulting integer to its corresponding ASCII character.
+Concatenate the characters to form the decoded message string.
+Parameters:
+
+message (int[]): An array of integers representing the encoded message.
+key (int): A number used in logical and arithmetic operations to decode the message.
+The function returns the decoded message as a String.

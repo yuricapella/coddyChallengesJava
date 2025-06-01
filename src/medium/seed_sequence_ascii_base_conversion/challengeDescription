@@ -1,0 +1,17 @@
+Seed Sequencer
+
+Create a function named seedSequencer that receives seedList and base as its parameters.
+
+This function generates a unique seed sequence based on the provided list of seed names and a specified number base.
+
+Steps:
+
+Convert each seed name in seedList to its ASCII representation.
+Concatenate the ASCII values of all seed names into a single list.
+Convert the concatenated ASCII values into the specified number base (base).
+Create a string representation of the converted value.
+Parameters:
+
+seedList (String[]): An array of seed names.
+base (int): The desired number base for encoding (e.g., 2 for binary, 10 for decimal).
+The function returns the generated seed sequence as a string.
