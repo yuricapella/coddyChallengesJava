@@ -1,0 +1,23 @@
+Yearbook ID Generator
+
+
+Create a function named generateYearbookId that receives name and graduationYear as its parameters.
+
+This function aims to generate a unique ID for each student's yearbook entry based on their name and graduation year.
+
+The ID should be generated using the following rules:
+
+Take the first three characters of the student's name. If the name is less than three characters, use the entire name.
+Convert the last two digits of the graduation year to binary.
+Concatenate the truncated name, the string "20", the binary representation of
+the last two digits of the graduation year, and the length of the student's full name.
+For example, if the input is "John Smith" and 2024, the steps would be:
+
+Truncate the name to "Joh".
+Convert 24 (last two digits of graduation year) to binary: 11000.
+Concatenate "Joh", "20", "11000", and 10 (length of "John Smith"), resulting in "Joh201100010".
+Parameters:
+
+name (String): The name of the student. It will only contain alphabetic characters (A-Z or a-z) and spaces.
+graduationYear (int): The graduation year of the student. It will be a valid year format (e.g., 2024).
+The function returns a String representing the unique yearbook ID for the student.
